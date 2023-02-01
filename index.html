@@ -5,6 +5,9 @@
 
     <!-- LINKING STYLESHEETS AND OTHER STUFF -->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <script src="./js/navigation.js" async></script>
   </head>
 
   <body>
@@ -14,10 +17,26 @@
       <nav>
         <img src="assets/logo.svg" alt="thewholepaycheck logo" width="90px" />
         
-        <ul class="links">
+        <div class="menu-mobile">
+          &Congruent;
+        </div>
+
+        <ul class="links display-font">
+          <li>
+            <a class="link" href="/works" target="_self">
+              Works
+            </a>
+          </li>
+
           <li>
             <a class="link" href="/about" target="_self">
               About
+            </a>
+          </li>
+
+          <li>
+            <a class="link" href="/contact" target="_self">
+              Contact
             </a>
           </li>
         </ul>
@@ -26,12 +45,20 @@
 
     <!-- MAIN CONTENT OF THE PAGE -->
     <main>
-      <h1> Main content goes here </h1>
+
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <h1 class="title display-font"> WE ARE CREATING CREATIVE THINGS </h1>
+        <div class="hero-buttons">
+          <button class="primary-button">SEND AN EMAIL</button>
+          <button class="secondary-button">SEE WORK</button>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER CONTENT OF THE PAGE -->
     <footer>
-      <small> Attribution/Copyrights goes here... </small>
+      <small class="copyright text-font"> Copyright 2023 | TheWholePaycheck | All Rights Reserved </small>
     </footer>
 
   </body>
