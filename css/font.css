@@ -1,0 +1,14 @@
+/* import fonts */
+@import url('https://fonts.cdnfonts.com/css/poe-vetica-new');
+@import url('https://fonts.cdnfonts.com/css/warownia');            
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+
+/* THIS STYLESHEET IS FOR EASY WAY TO APPLY FONT BY JUST ADDING CLASS INTO ELEMENT */
+.display-font {
+    font-family: 'Warownia', sans-serif;
+    font-weight: 900;
+}
+
+.text-font {
+    font-family: 'Mona-Sans', sans-serif;
+}
