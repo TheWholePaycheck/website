@@ -27,7 +27,8 @@
   /* MAIN */
   .hero .title {
     text-align: center;
-    font-size: 88px;
+    font-size: 70px;
+    line-height: 60px;
   }
   
   .hero .title::selection, footer small::selection {
@@ -39,12 +40,37 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    padding-top: 50px;
+    align-items: center;
   }
 
-  .hero p {
+  .hero .intro-paragraph {
     text-align: center;
+    max-width: 500px;
   }
 
+  .send-email-button-link {
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+  }
+
+  .send-email-button-link button {
+    cursor: pointer;
+    padding: 10px 16px;
+    background-color: white;
+    border: solid 2px white;
+    color: #e75314;
+    text-transform: uppercase;
+    outline: none;
+}
+
+  .send-email-button-link button:hover, .send-email-button-link button:active, .send-email-button-link:focus button {
+    background-color: #e75314;
+    color: white;
+  }
+  
+  
   /* FOOTER */
   footer {
     text-align: center;
@@ -53,14 +79,17 @@
   footer .copyright {
     text-transform: uppercase;
   }
-
-  /* RESPONSIVE TITLE */
+  
   @media screen and (max-width: 970px) {
     .hero .title {
       font-size: 70px;
     }
+
+    .hero p {
+        text-align: center;
+        max-width: 500px;
+    }
   }
-  
   
   @media screen and (max-width: 750px) {
     .hero .title {
@@ -68,10 +97,10 @@
     }
   }
   
-  
   @media screen and (max-width: 550px) {
     .hero .title {
       font-size: 32px;
       max-width: 400px;
+       line-height: 30px;
     }
   }

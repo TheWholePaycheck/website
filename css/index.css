@@ -64,13 +64,15 @@ body {
   color: white;
 }
 
+.hero-buttons a {
+  width: auto;
+}
+
 
 /* FOOTER */
 footer {
   text-align: center;
 }
-
-
 
 footer .copyright {
   text-transform: uppercase;
